@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
       
       core.source_files = 'BasicViewKit/Core/**/*'
   
-      core.dependency 'GIKit'
+     # core.dependency 'GIKit'
       core.dependency 'ReactiveSwift'
       core.dependency 'ReactiveCocoa'
 
