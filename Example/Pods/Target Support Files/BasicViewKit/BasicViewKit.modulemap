@@ -1,0 +1,6 @@
+framework module BasicViewKit {
+  umbrella header "BasicViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

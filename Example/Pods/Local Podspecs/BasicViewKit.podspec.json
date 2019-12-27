@@ -1,0 +1,22 @@
+{
+  "name": "BasicViewKit",
+  "version": "0.1.0",
+  "summary": "A short description of BasicViewKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Tyrant/BasicViewKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tyrant": "appledevelop@gichain.net"
+  },
+  "source": {
+    "git": "https://github.com/Tyrant/BasicViewKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BasicViewKit/Classes/**/*"
+}

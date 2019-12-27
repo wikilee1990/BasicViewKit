@@ -1,0 +1,16 @@
+PODS:
+  - BasicViewKit (0.1.0)
+
+DEPENDENCIES:
+  - BasicViewKit (from `../`)
+
+EXTERNAL SOURCES:
+  BasicViewKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BasicViewKit: 6e938ddafc0b37f0efe35e3a41969a9bedecfcc9
+
+PODFILE CHECKSUM: c52695af9579f262611f8f25b12bec418891f3ad
+
+COCOAPODS: 1.8.4
