@@ -1,13 +1,14 @@
 //
 //  LengthFit.swift
-//  GIViewKit
+//  BasicViewKit
 //
 //  Created by Tyrant on 2019/5/7.
 //  Copyright © 2019 Rex. All rights reserved.
 //
 
 import UIKit
-import struct GIKit.GI
+
+import BasicKit
 
 fileprivate func LengthFit(_ origin:CGFloat ) -> CGFloat {
     
@@ -22,7 +23,7 @@ extension NSLayoutConstraint {
     @IBInspectable public var lengthFit: Bool {
         set {
             if newValue == true {
-                self.constant = self.constant.gi.lengthFit
+                self.constant = self.constant.bk.lengthFit
             }
         }
         get {
@@ -33,7 +34,7 @@ extension NSLayoutConstraint {
 }
 
 
-extension GI where Base == CGFloat {
+extension BK where Base == CGFloat {
     
     public var lengthFit: CGFloat {
         
@@ -43,7 +44,7 @@ extension GI where Base == CGFloat {
     
 }
 
-extension GI where Base == Float {
+extension BK where Base == Float {
     
     public var lengthFit: CGFloat {
         
@@ -53,7 +54,7 @@ extension GI where Base == Float {
     
 }
 
-extension GI where Base: BinaryInteger {
+extension BK where Base: BinaryInteger {
     
     public var lengthFit: CGFloat {
         

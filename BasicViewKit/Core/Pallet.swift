@@ -1,6 +1,6 @@
 //
 //  Pallet.swift
-//  GIViewKit
+//  BasicViewKit
 //
 //  Created by Ray on 2019/1/2.
 //  Copyright © 2019 Rex. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-import GIKit
+import BasicKit
 
 public enum ColorFor { case text, view }
 
@@ -41,7 +41,7 @@ public enum Gradient {
     case blue_blue, gray_gray, yellow_yellow
 }
 
-extension GI: Pallet where Base == UIColor {
+extension BK: Pallet where Base == UIColor {
     
     public static func black(_ cCase: ColorFor = .view) -> UIColor {
         return PalletBoard.black(cCase)

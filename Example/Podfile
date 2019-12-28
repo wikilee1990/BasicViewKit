@@ -1,6 +1,11 @@
 use_frameworks!
 
 target 'BasicViewKit_Example' do
+  
+  pod 'XKit', :git => 'git@114.242.31.175:wangzhichen/iOS_X.git', :branch => 'dev'
+  
+  pod 'BasicKit', :git => 'git@114.242.31.175:wangzhichen/BasicKit.git'
+  
   pod 'BasicViewKit', :path => '../'
 
   target 'BasicViewKit_Tests' do

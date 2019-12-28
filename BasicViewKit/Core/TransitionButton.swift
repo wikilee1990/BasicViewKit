@@ -1,6 +1,6 @@
 //
 //  TransitionButton.swift
-//  GIKit
+//  Kit
 //
 //  Created by Ray on 2018/12/12.
 //  Copyright © 2018 Rex. All rights reserved.

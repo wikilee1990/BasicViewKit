@@ -1,6 +1,6 @@
 //
 //  Themes.swift
-//  GIKit
+//  BasicViewKit
 //
 //  Created by Ray on 2018/12/6.
 //  Copyright © 2018 Rex. All rights reserved.
@@ -10,15 +10,15 @@ import UIKit
 
 import XKit
 
-import GIKit
+import BasicKit
 
 final public class Themes {
 
     public static func make() {
         
-        UITableView.appearance().separatorColor = UIColor.gi.lightGray()
+        UITableView.appearance().separatorColor = UIColor.bk.lightGray()
         UITableViewCell.appearance().selectedBackgroundView = UIView()
-        UITabBar.appearance().barTintColor = UIColor.gi.red()
+        UITabBar.appearance().barTintColor = UIColor.bk.red()
     }
     
 }
@@ -115,7 +115,7 @@ extension String: MakeColor {
 
 
 
-extension GI where Base == String {
+extension BK where Base == String {
     
     /// 文字图片化
     public var image: UIImage? {
@@ -156,17 +156,17 @@ extension ShowingOff {
     
     /// 渐变
     public var gradient: [CGColor] {
-        return UIColor.gi.otc_gradient()
+        return UIColor.bk.otc_gradient()
     }
     
     /// 主题颜色
     public var themes: UIColor? {
-        return UIColor.gi.blue()
+        return UIColor.bk.blue()
     }
     
     /// 主题图标
     public var icon: UIImage? {
-        return description.gi.image
+        return description.bk.image
     }
     
     /// 别名

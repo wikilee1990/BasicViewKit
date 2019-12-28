@@ -1,13 +1,13 @@
 //
 //  NewInTableView.swift
-//  GIViewKit
+//  BasicViewKit
 //
 //  Created by Ray on 2019/1/2.
 //  Copyright © 2019 Rex. All rights reserved.
 //
 
 import UIKit
-import GIKit
+import BasicKit
 
 
 extension UITableView {
@@ -26,7 +26,7 @@ extension UITableView {
     
 }
 
-extension GI where Base: UITableViewCell {
+extension BK where Base: UITableViewCell {
     
     
     /// 起始位置

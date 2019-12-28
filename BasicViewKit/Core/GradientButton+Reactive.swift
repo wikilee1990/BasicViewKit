@@ -30,3 +30,19 @@ extension Reactive where Base == GradientButton {
         }
     }
 }
+
+
+extension PropertyProtocol where Value: Collection {
+    /// 数据数量
+    public var count: Property<Int> {
+        return map { $0.count }
+    }
+
+
+    /// 数据是否为空
+    public var isEmpty: Property<Bool> {
+        return map { $0.isEmpty }
+    }
+
+
+}

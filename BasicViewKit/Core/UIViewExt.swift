@@ -6,7 +6,7 @@
 //  Copyright © 2018 Rex. All rights reserved.
 //
 
-import GIKit
+import BasicKit
 
 /// Mark -
 
@@ -19,7 +19,7 @@ import GIKit
         path.move(to: CGPoint(x: left, y: bounds.height))
         path.addLine(to: CGPoint(x: bounds.width - right, y: bounds.height))
         
-        UIColor.gi.blue(.view).setStroke()
+        UIColor.bk.blue(.view).setStroke()
         path.stroke()
     }
     
@@ -69,7 +69,7 @@ extension UIView {
     @IBInspectable public var chameleon: Bool {
         set {
             guard newValue else { return }
-            if let bg = self.gi.topSuper.backgroundColor {
+            if let bg = self.bk.topSuper.backgroundColor {
                 backgroundColor = bg
             }
         }
@@ -172,11 +172,11 @@ extension UIView {
 
 
 
-extension GI where Base: UIView {
+extension BK where Base: UIView {
     
     /// 最上层的父视图
     public var topSuper: UIView {
-        return GI.topSuper(self.base)
+        return BK.topSuper(self.base)
     }
     
     

@@ -1,16 +1,51 @@
 PODS:
-  - BasicViewKit (0.1.0)
+  - BasicKit (1.0.0):
+    - XKit
+  - BasicViewKit (1.0.1):
+    - BasicViewKit/Core (= 1.0.1)
+  - BasicViewKit/Core (1.0.1):
+    - BasicKit
+    - ReactiveCocoa
+    - ReactiveSwift
+  - ReactiveCocoa (10.1.0):
+    - ReactiveSwift (~> 6.1)
+  - ReactiveSwift (6.1.0)
+  - XKit (0.3.1)
 
 DEPENDENCIES:
+  - "BasicKit (from `git@114.242.31.175:wangzhichen/BasicKit.git`)"
   - BasicViewKit (from `../`)
+  - "XKit (from `git@114.242.31.175:wangzhichen/iOS_X.git`, branch `dev`)"
+
+SPEC REPOS:
+  trunk:
+    - ReactiveCocoa
+    - ReactiveSwift
 
 EXTERNAL SOURCES:
+  BasicKit:
+    :git: "git@114.242.31.175:wangzhichen/BasicKit.git"
   BasicViewKit:
     :path: "../"
+  XKit:
+    :branch: dev
+    :git: "git@114.242.31.175:wangzhichen/iOS_X.git"
+
+CHECKOUT OPTIONS:
+  BasicKit:
+    :commit: de98a3e3ecf7586baa1c214f19277a4a857e317a
+    :git: "git@114.242.31.175:wangzhichen/BasicKit.git"
+  XKit:
+    :commit: 378eb857ad5ed9f88c332e1d64bb0cfe59d6fd53
+    :git: "git@114.242.31.175:wangzhichen/iOS_X.git"
 
 SPEC CHECKSUMS:
-  BasicViewKit: 6e938ddafc0b37f0efe35e3a41969a9bedecfcc9
+  BasicKit: 7e52195e0a7ffade9cc29bc802a3066494e16f91
+  BasicViewKit: 73e418f536685ea9c8836e7a1ba7a08d9f294c05
+  ReactiveCocoa: 2f1d942d79072eded6d8c3bc7c2a641d40855a56
+  ReactiveSwift: b78c7259f8ca46368238c895ae33a6a3bf9f811c
+  XKit: d548ebebbc5c74d223e4e911ad96a3c0ae8bb6c5
 
-PODFILE CHECKSUM: c52695af9579f262611f8f25b12bec418891f3ad
+PODFILE CHECKSUM: 804a7c2a594e75240a80fe858fb57ebdf038a2f0
 
 COCOAPODS: 1.8.4

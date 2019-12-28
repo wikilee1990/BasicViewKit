@@ -1,6 +1,6 @@
 //
 //  NewInButton.swift
-//  GIViewKit
+//  BasicViewKit
 //
 //  Created by Ray on 2019/3/6.
 //  Copyright © 2019 Rex. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-import GIKit
+import BasicKit
 
 /// 图片相对于Title的位置
 ///
@@ -33,7 +33,7 @@ public enum ImageAt {
     }
 }
 
-extension GI where Base: UIButton {
+extension BK where Base: UIButton {
     
     /// 图片位于Title的相对位置
     ///
@@ -94,7 +94,7 @@ extension Reactive where Base: UIButton {
     public func titleThenIcon(for state: UIControl.State) -> BindingTarget<(String, BasicViewKit.ImageAt)> {
         return makeBindingTarget {
             $0.setTitle($1.0, for: state)
-            $0.gi.image(at: $1.1)
+            $0.bk.image(at: $1.1)
         }
     }
     

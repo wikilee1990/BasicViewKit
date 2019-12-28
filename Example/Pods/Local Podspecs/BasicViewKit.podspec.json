@@ -1,22 +1,49 @@
 {
   "name": "BasicViewKit",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "summary": "A short description of BasicViewKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Tyrant/BasicViewKit",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "homepage": "http://114.242.31.175:8090/wangzhichen/BasicViewKit",
   "authors": {
-    "Tyrant": "appledevelop@gichain.net"
+    "Rex": "rex_wzc@163.com"
   },
   "source": {
-    "git": "https://github.com/Tyrant/BasicViewKit.git",
-    "tag": "0.1.0"
+    "git": "git@114.242.31.175:wangzhichen/BasicViewKit.git",
+    "tag": "1.0.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "BasicViewKit/Classes/**/*"
+  "default_subspecs": "Core",
+  "swift_versions": "5.0",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "BasicViewKit/Core/**/*",
+      "dependencies": {
+        "BasicKit": [
+
+        ],
+        "ReactiveSwift": [
+
+        ],
+        "ReactiveCocoa": [
+
+        ]
+      }
+    },
+    {
+      "name": "Standard",
+      "source_files": "BasicViewKit/Standard/**/*",
+      "dependencies": {
+        "BasicViewKit/Core": [
+
+        ],
+        "MJRefresh": [
+          "~> 3.1.17"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
 }
