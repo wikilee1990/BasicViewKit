@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BasicViewKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of BasicViewKit.'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
       
       core.source_files = 'BasicViewKit/Core/**/*'
   
-     # core.dependency 'GIKit'
+      core.dependency 'GIKit'
       core.dependency 'ReactiveSwift'
       core.dependency 'ReactiveCocoa'
 
